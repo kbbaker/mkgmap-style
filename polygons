@@ -8,29 +8,12 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-aeroway=airport [0x02d resolution 22]
-aeroway=aerodrome [0x2d resolution 22]
-aeroway=terminal [0x38 resolution 22]
-aeroway=apron [0x2c resolution 22]
-
-amenity=hospital [0x0b resolution 22]
-amenity=parking [0x05 resolution 22]
-amenity=school  [0x0a resolution 22]
-amenity=university  [0x0a resolution 22]
-amenity=college | amenity=kindergarten [0x0a resolution 22]
-building=supermarket [0x35 resolution 22]
-amenity=grave_yard [0x1a resolution 22]
-
 landuse=residential [0x02 resolution 14]
-landuse=allotments [0x23 resolution 22]
-landuse=basin [0x3f resolution 22]
 landuse=cemetary [0x1a resolution 22]
 landuse=cemetery [0x1a resolution 22]
 landuse=retail [0x08 resolution 22]
-landuse=commercial [0x26 resolution 22]
-landuse=construction | landuse=greenfield | landuse=brownfield [0x27 resolution 22]
-landuse=farm | landuse=farmyard [0x24 resolution 22]
-landuse=forest [0x15 resolution 22]
+landuse=commercial [0x08 resolution 22]
+landuse=forest [0x50 resolution 22]
 landuse=field | natural=field [0x1d resolution 22]
 landuse=industrial | landuse=railway [0x0c resolution 22]
 landuse=meadow | landuse=grass | landuse=recreation_ground | landuse=conservation | landuse=village_green [0x17 resolution 22]
@@ -54,14 +37,6 @@ leisure=sports_center | leisure=sports_centre [0x19 resolution 22]
 leisure=stadium [0x19 resolution 22]
 leisure=track [0x37 resolution 22]
 
-tourism=camp_site [0x10 resolution 22]
-tourism=caravan_site | tourism=picnic_site [0x10 resolution 22]
-tourism=attraction [0x11 resolution 22]
-tourism=zoo [0x22 resolution 22]
-
-military=barracks [0x1c resolution 22]
-military=danger_area [0x21 resolution 22]
-
 natural=glacier [0x4d resolution 22]
 natural=marsh | natural=wetland [0x51 resolution 22]
 natural=mud [0x2f resolution 22]
@@ -81,8 +56,8 @@ highway=unclassified & area=yes [0x31 resolution 22]
 highway=service & area=yes [0x31 resolution 22]
 man_made=pier & area=yes [0x39 resolution 22]
 
-waterway=riverbank [0x46 resolution 22]
-waterway=dock | waterway=mill_pond [0x48 resolution 22]
+waterway=riverbank [0x3c resolution 22]
+waterway=dock | waterway=mill_pond [0x3c resolution 22]
 
 # buildings
 amenity=place_of_worship [0x36 resolution 22]
