@@ -2,7 +2,6 @@
 # This file contains all the rules to set up address information from
 # the tags that are added by the boundary processing.
 
-
 # first set the country code
 mkgmap:country!=* & mkgmap:admin_level2=* { set mkgmap:country='${mkgmap:admin_level2}' }
 mkgmap:country!=* & addr:country=* { set mkgmap:country='${addr:country}' }
@@ -81,20 +80,15 @@ mkgmap:city!=* & mkgmap:admin_level10=* { set mkgmap:city='${mkgmap:admin_level1
 mkgmap:city!=* & is_in:city=* { set mkgmap:city='${is_in:city}' }
 mkgmap:city!=* & addr:city=* { set mkgmap:city='${addr:city}' }
 
-opening_hours=* {set mkgmap:region='${opening_hours|subst:Tu=>Di|subst:We=>Mi|subst:Th=>Do|subst:Su=>So}' }
-website=* {set mkgmap:region='${mkgmap:region}   ${website}'}
-collection_times=* {set mkgmap:region='${collection_times|subst:Tu=>Di|subst:We=>Mi|subst:Th=>Do|subst:Su=>So}' }
-fee=* {set mkgmap:region='${mkgmap:region} ${fee|subst:yes=>kostenpflichtig|subst:no=>kostenfrei}'}
-
 mkgmap:postal_code!=* & mkgmap:postcode=* { set mkgmap:postal_code='${mkgmap:postcode}' } 
 mkgmap:postal_code!=* & addr:postcode=* { set mkgmap:postal_code='${addr:postcode}' } 
 
 mkgmap:street!=* & addr:street=* { set mkgmap:street='${addr:street}' }
 mkgmap:street!=* & addr:housename=* { set mkgmap:street='${addr:housename}' }
 
-mkgmap:housenumber!=* & addr:housenumber=* { set mkgmap:housenumber='${addr:housenumber}' }
+#mkgmap:housenumber!=* & addr:housenumber=* { set mkgmap:housenumber='${addr:housenumber}' }
 
-mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
-mkgmap:phone!=* & contact:phone=* { add mkgmap:phone='${contact:phone}' }
+#mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
+#mkgmap:phone!=* & contact:phone=* { add mkgmap:phone='${contact:phone}' }
 
 mkgmap:is_in!=* & is_in=* { set mkgmap:is_in='${is_in}' }
