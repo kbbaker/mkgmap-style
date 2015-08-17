@@ -8,6 +8,8 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
+highway=* & name=* { set mkgmap:street='${name}' }
+
 highway=motorway [0x10e00 resolution 14]
 
 highway= motorway_link & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e00 resolution 14]
@@ -156,3 +158,5 @@ railway=light_rail [0x14 resolution 18]
 railway=rail [0x14 resolution 18]
 railway=subway [0x14 resolution 20]
 railway=tram [0x14 resolution 20]
+
+include 'inc/address';
