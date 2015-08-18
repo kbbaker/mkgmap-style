@@ -8,6 +8,7 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
+include 'inc/address';
 include 'inc/place';
 
 <finalize>

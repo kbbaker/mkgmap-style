@@ -8,7 +8,8 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-highway=* & name=* { set mkgmap:street='${name}' }
+highway=* & name=* { set mkgmap:street='${name}'}
+include 'inc/address';
 
 highway=motorway [0x10e00 resolution 14]
 
@@ -159,4 +160,4 @@ railway=rail [0x14 resolution 18]
 railway=subway [0x14 resolution 20]
 railway=tram [0x14 resolution 20]
 
-include 'inc/address';
+#highway = * {echotags}
