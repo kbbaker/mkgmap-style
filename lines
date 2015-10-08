@@ -16,38 +16,38 @@ include 'inc/address';
 #Network#
 #########
 
-level = 1 & ba != * {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 14]
-level = 2 & ba != * {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 14]
+level = 1 & ba != * {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 20]
+level = 2 & ba != * {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 20]
 
-level = 1 & ba = -1 {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 14]
-level = 2 & ba = -1 {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 14]
+level = 1 & ba = -1 {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 20]
+level = 2 & ba = -1 {add mkgmap:bicycle='yes'; set oneway=no;name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 20]
 
-level = 1 & ba = 1 & ba_sum > 4000.0 {add mkgmap:bicycle='yes'; add mkgmap:unpaved='yes'; name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 14]
-level = 2 & ba = 1 & ba_sum > 4000.0 {add mkgmap:bicycle='yes'; add mkgmap:unpaved='yes'; name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 14]
+level = 1 & ba = 1 & ba_sum > 4000.0 {add mkgmap:bicycle='yes'; add mkgmap:unpaved='yes'; name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 20]
+level = 2 & ba = 1 & ba_sum > 4000.0 {add mkgmap:bicycle='yes'; add mkgmap:unpaved='yes'; name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 20]
 
-level = 1 & ba = 1 & ba_sum < 4000.0 {add mkgmap:bicycle='yes'; name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 14]
-level = 2 & ba = 1 & ba_sum < 4000.0 {add mkgmap:bicycle='yes'; name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 14]
+level = 1 & ba = 1 & ba_sum < 4000.0 {add mkgmap:bicycle='yes'; name '${name}'} [0x16 road_class=2 road_speed= 1 resolution 20]
+level = 2 & ba = 1 & ba_sum < 4000.0 {add mkgmap:bicycle='yes'; name '${name}'} [0x16 road_class=3 road_speed= 1 resolution 20]
 
 ###################
 #high level roads#
 ###################
 
-highway=motorway [0x10e14 resolution 14]
+highway=motorway [0x10e14 resolution 10]
 
-highway= motorway_link & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e14 resolution 14]
-highway= motorway_link & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x01 road_class=1 road_speed= 1 resolution 14]
+highway= motorway_link & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e14 resolution 15]
+highway= motorway_link & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x01 road_class=1 road_speed= 1 resolution 15]
 
-highway= trunk & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 14]
-highway= trunk & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 1 resolution 14]
+highway= trunk & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 15]
+highway= trunk & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 1 resolution 15]
 
-highway= trunk_link & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 14]
-highway= trunk_link & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 1 resolution 14]
+highway= trunk_link & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 15]
+highway= trunk_link & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 1 resolution 15]
 
-highway= primary & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 14]
-highway= primary & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 2 resolution 14]
+highway= primary & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 15]
+highway= primary & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 2 resolution 15]
 
-highway= primary_link & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 14]
-highway= primary_link & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 2 resolution 14]
+highway= primary_link & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e13 resolution 15]
+highway= primary_link & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x0b road_class=1 road_speed= 2 resolution 15]
 
 highway= secondary & level = 0 & (modus_b = 0 | rdcond=3 | rdcond=4) {add mkgmap:bicycle='no'; name '${name}'} [0x10e0e resolution 22]
 highway= secondary & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x04 road_class=1 road_speed= 2 resolution 22]

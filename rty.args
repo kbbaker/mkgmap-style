@@ -1,0 +1,35 @@
+family-id: 66
+product-id: 1
+draw-priority: 20
+series-name: RouteYou RaceMap (beta2)
+family-name: RouteYou RaceMap (beta2)
+description: RouteYou RaceMap (beta2)
+copyright-message: © RouteYou, Data ODbL © OpenStreetMap contributors
+area-name: RTY_BNL
+country-name: BENELUX
+country-abbr: BNL
+style-file: C:\mkgmap\style
+overview-mapname: 10010000
+#download the latest sea files from from http://osm2.pleiades.uni-wuppertal.de/sea/latest/
+#precomp-sea: sea.zip
+generate-sea: land-tag=natural=background
+#download the latest bounds from http://osm2.pleiades.uni-wuppertal.de/bounds/latest/
+bounds: bounds/bounds.zip
+housenumbers
+merge-lines
+add-pois-to-lines
+latin1
+index
+code-page: 1252
+show-profiles: 1
+#min-size-polygon: 4
+preserve-element-order
+location-autofill=is_in,nearest
+merge-lines
+route
+gmapsupp
+ignore-turn-restrictions
+nsis
+tdbfile
+make-opposite-cycleways
+keep-going

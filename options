@@ -14,3 +14,6 @@ name_tag =name:fr, name:ca, name:en, int_name, name
 
 # The levels specification for this style
 #
+
+levels = 0:24, 1:23, 2:22, 3:20, 4:18
+overview-levels = 5:17, 6:15

@@ -33,8 +33,8 @@ natural=marsh | natural=wetland [0x51 resolution 22]
 natural=scrub [0x50 resolution 22]
 natural=heath [0x50 resolution 22]
 natural=water | natural=lake | type = water | type = riverbank [0x3f resolution 14]
-natural=sea [0x32 resolution 10]
-natural=land [0x54 resolution 10]
+natural=sea [0x32 resolution 14]
+natural=land [0x54 resolution 14]
 natural=beach [0x10f00 resolution 22]
 
 # squares and plazas
