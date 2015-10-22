@@ -97,39 +97,39 @@ highway= cycleway & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${na
 
 #ways for slow traffic#
 
-highway= mini_roundabout & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= mini_roundabout & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= service & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= service & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= bus & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= bus & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= track & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=1 road_speed= 1 resolution 22]
+highway= track & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=1 road_speed= 1 resolution 22]
 
-highway= bridleway & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= bridleway & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= footway & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= footway & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= path & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= path & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= crossing & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= crossing & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= escape & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= escape & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= nouse & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= nouse & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= passing_place & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= passing_place & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= pedestrian & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= pedestrian & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= platform & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= platform & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= steps & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= steps & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= trail & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= trail & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= turning_circle & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= turning_circle & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
-highway= turning_loop & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name} [0x10 road_class=0 road_speed= 1 resolution 22]
+highway= turning_loop & level = 0 & modus_b = 1 {add mkgmap:bicycle='no'; name '${name}'} [0x10 road_class=0 road_speed= 1 resolution 22]
 
 
 #ferry#
